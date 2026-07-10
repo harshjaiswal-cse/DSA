@@ -5,7 +5,7 @@ public:
         for(int i=0;i<nums.size();i++)
         {
             int complement=target-nums[i];
-            if(res.count(complement))
+            if(res.find(complement)!=res.end())
             {
                 return {res[complement],i};
             }
